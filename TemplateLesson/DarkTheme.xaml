@@ -1,0 +1,24 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:TemplateLesson">
+    <SolidColorBrush x:Key="Button.Background" Color="Black"></SolidColorBrush>
+    <SolidColorBrush x:Key="Button.Foreground" Color="White"></SolidColorBrush>
+    <Style TargetType="Button">
+        <Style.Setters>
+            <Setter Property="Background" Value="{StaticResource Button.Background}"></Setter>
+            <Setter Property="Foreground" Value="{StaticResource Button.Foreground}"></Setter>
+            <Setter Property="FontStyle" Value="Italic"></Setter>
+        </Style.Setters>
+        <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Background" Value="Gray"></Setter>
+                    <Setter Property="Foreground" Value="Black"></Setter>
+                    <Setter Property="FontStyle" Value="Oblique"></Setter>
+                </Trigger>
+            </Style.Triggers>
+
+    </Style>
+ 
+
+
+</ResourceDictionary>
